@@ -16,6 +16,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
+
         $this->app->bind(Articles\ArticlesRepository::class, function () {
             // This is useful in case we want to turn-off our
             // search cluster or when deploying the search

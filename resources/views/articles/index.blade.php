@@ -7,7 +7,7 @@
                 Articles <small>({{ $articles->count() }})</small>
             </div>
             <div class="card-body">
-                <form action="{{ url('search') }}" method="get">
+                <form action="{{ url('/') }}" method="get">
                     <div class="form-group">
                         <input
                             type="text"

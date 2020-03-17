@@ -13,15 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-use App\Articles\ArticlesRepository;
-
-Route::get('/search', function (ArticlesRepository $repository) {
-    $articles = $repository->search((string) request('q'));
-
-    return view('articles.index', [
-        'articles' => $articles,
-    ]);
-});
+Route::get('/', 'ArticlesController@index');
 
 Auth::routes();
 
